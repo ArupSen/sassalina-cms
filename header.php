@@ -15,6 +15,7 @@
   echo wp_title( ' | ', false, right ); bloginfo( 'name' );
 } ?></title>
   <meta name="description" content="<?php wp_title(); echo ' | '; bloginfo( 'description' ); ?>" />
+  <meta name="robots" content="noindex, nofollow">
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
   <meta name="generator" content="WordPress" />
   <link rel="profile" href="http://gmpg.org/xfn/11" />
