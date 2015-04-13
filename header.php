@@ -24,7 +24,11 @@
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
   <link rel="alternate" type="application/rss+xml" title="<?php bloginfo( 'name' ); ?>" href="<?php bloginfo( 'rss2_url' ); ?>" />
   <link rel="alternate" type="application/atom+xml" title="<?php bloginfo( 'name' ); ?>" href="<?php bloginfo( 'atom_url' ); ?>" />
-  <?php wp_enqueue_script("jquery"); /* Loads jQuery if it hasn't been loaded already */ ?>
+  <!-- Google webfonts Lato -->
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<?php wp_enqueue_script("jquery"); /* Loads jQuery if it hasn't been loaded already */ ?>
 <?php 
   // The HTML5 Shim is required for older browsers, mainly older versions IE
 ?>
@@ -37,24 +41,6 @@
 
 <body <?php body_class(); ?>>
 
-<?php  if (is_user_logged_in()) { /* An option admin menu that only displays when logged in */ ?>
-<div id="if-logged-in">
-  <div class="container">
-    <p class="left">
-      <a href="<?php bloginfo('url'); ?>/wp-admin/">Control Panel</a>
-      <a href="<?php bloginfo('url'); ?>/wp-admin/edit.php">Posts</a>
-      <a href="<?php bloginfo('url'); ?>/wp-admin/edit.php?post_type=page">Pages</a>
-      <a href="<?php bloginfo('url'); ?>/wp-admin/edit-comments.php">Comments</a>
-      <a href="<?php bloginfo('url'); ?>/wp-admin/upload.php">Media Library</a> 
-    </p>
-    <p class="right">
-      <a href="<?php bloginfo('url'); ?>/wp-admin/options-general.php">Settings</a>
-      <a href="<?php bloginfo('url'); ?>/wp-admin/profile.php">Profile</a>
-      <?php wp_loginout() ?>
-    </p>
-  </div>
-</div><!--#if-logged-in-->
-<?php } ?>
 
 <div id="main"><!-- this encompasses the entire Web site -->
   <header>
