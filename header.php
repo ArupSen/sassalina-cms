@@ -42,7 +42,22 @@
 <body <?php body_class(); ?>>
 
 
-<div id="main"><!-- this encompasses the entire Web site -->
+<div id="wrap" class="container"><!-- this encompasses the entire Web site -->
+<div class="contact-bar">
+<a href="contact.php" class="contact-link">contact</a>
+<div id="mc_embed_signup">
+<!--"//sassalina.us9.list-manage.com/subscribe/post?u=4447e56fae25233ff8fef3421&amp;id=0d9c0e782c"-->
+<form  action="http://eepurl.com/bfhO8f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate navbar-form navbar-left" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll" class="form-group">
+
+  <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="Sign up to our Newsletter" required size="24">
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_4447e56fae25233ff8fef3421_0d9c0e782c" tabindex="-1" value=""></div>
+    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">
+    </div>
+</form>
+</div>
+<!--End mc_embed_signup-->
   <header>
     <div class="container">
       <?php if( is_front_page() || is_home() ) { ?>
