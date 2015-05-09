@@ -3,23 +3,23 @@
 ?>
 <?php get_header(); ?>
 
-<div id="content">
+<div id="contents">
   <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
     <div id="post-<?php the_ID(); ?>" <?php post_class('page'); ?>>
-      <article>
-        <h1><?php the_title(); ?></h1>
-        <?php edit_post_link('<small>Edit this entry</small>','',''); ?>
-        <?php echo '<div class="featured-thumbnail">'; the_post_thumbnail(); echo '</div>'; /* loades the post's featured thumbnail, requires Wordpress 3.0+ */ ?>
-
+      <div class="container">
+<h2>diamond rings</h2>
+<a href="<?php bloginfo('url'); ?>/diamond-rings/" title="back to diamond rings" class="btn btn-default back-button"><i class="fa fa-angle-double-left"></i> diamond rings</a>
+<div class="details">
+        <h2><?php the_title(); ?></h2>
+<hr>
         <div id="page-content">
           <?php the_content(); ?>
-          <?php wp_link_pages('before=<div class="pagination">&after=</div>'); ?>
         </div><!--#pageContent -->
-      </article>
+</div><!-- .details -->
+      </div>
 
     </div><!--#post-# .post-->
 
-    <?php comments_template( '', true ); ?>
 
   <?php endwhile; ?>
 </div><!--#content-->
