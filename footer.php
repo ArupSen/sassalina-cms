@@ -68,7 +68,7 @@
   jQuery('.gallery').find('a').unwrap('dl');
   $thumbLink.find('style').remove();
   jQuery('.gallery').find('a').each(function() {
-  var baseUrl = 'http://www.sassalina.com/cms/';
+  var baseUrl = 'http://www.sassalina.com/';
   var pageName = jQuery(this).find('img').attr('alt');
   pageName = pageName.replace(/ /g, '-');
   jQuery(this).attr('href', baseUrl + pageName + '/');
@@ -177,6 +177,14 @@
   $design_page.find('.testimonial-show').find('h4').on('click', function() {
     $design_page.find('.show-hide').slideToggle();
   });
+</script>
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-29067463-1');ga('send','pageview');
 </script>
 </body>
 </html>

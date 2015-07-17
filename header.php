@@ -15,7 +15,6 @@
   echo wp_title( ' | ', false, right ); bloginfo( 'name' );
 } ?></title>
   <meta name="description" content="<?php wp_title(); echo ' | '; bloginfo( 'description' ); ?>" />
-  <meta name="robots" content="noindex, nofollow">
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
   <meta name="generator" content="WordPress" />
   <link rel="profile" href="http://gmpg.org/xfn/11" />
@@ -70,7 +69,7 @@ include('social_icons.php');
         <h2><a href="<?php bloginfo('url'); ?>/" title="<?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a></h2>
       <?php } ?>
       <div class="logo">
-        <img src="http://www.sassalina.com/cms/wp-content/uploads/2015/04/logo-sharp.jpg" class="img-responsive">
+        <img src="http://www.sassalina.com/wp-content/uploads/2015/04/logo-sharp.jpg" class="img-responsive">
       </div>
       <nav class="primary">
         <?php wp_nav_menu( array('menu' => 'Header Menu' )); /* editable within the Wordpress backend */ ?>
