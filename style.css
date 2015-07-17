@@ -72,6 +72,9 @@ body{font-family:'Lato', Arial, sans-serif;font-size:100.01%;position:relative;m
 div#wrap{background-color: #FFF;}
 
 /*main heading and sub heading*/
+header h2 {
+    display:none;
+  }
 .contact-bar {
   background: #cae9eb;
   min-height: 28px;
@@ -217,7 +220,7 @@ li.dropdown:hover .dropdown-menu {
   text-align: right;
 }
 /* about page */
-#about #contents p {
+.page-id-716 #contents p {
   max-width: 370px;
   padding-bottom: 1em;
   margin-top: -4px;
@@ -263,7 +266,7 @@ p.before-text, p.after-text {
 position: absolute;
 right: 60px;
 }
-p.before-text {
+p.after-text {
   bottom: 5px;
 }
 .testimonial-show {
@@ -324,40 +327,40 @@ top: -40px;
 font-style: italic;
 }
 /*footer */
-footer{
+#footer{
   margin-top: 40px;
   height: 160px;
   position: relative;
   margin-bottom: 20px;
 }
-footer img {
+#footer img {
   max-width: 65px;
   margin: 0 auto;
 }
-footer hr {
+#footer hr {
   width:37%;
   position: absolute;
   top: 10px;
 }
-footer hr.left-line {
+#footer hr.left-line {
   left:8.4%;
 }
-footer hr.right-line {
+#footer hr.right-line {
   right:7.4%;
   width:38%;
 }
-footer ul {
+#footer ul {
   width: 70%;
   margin-top: 25px;
 }
 #nav-contact {
   left: 12px;
 }
-footer .social-icons {
+#footer .social-icons {
   text-align: center;
   margin: -15px 0 50px;
 }
-footer .social-icons a {
+#footer .social-icons a {
   padding: 0 5px;
   color: #999;
   font-size: 20px;
@@ -367,19 +370,19 @@ footer .social-icons a {
   .navbar-form .form-group {
     width: 70%;
   }
-  footer hr.left-line {
+  #footer hr.left-line {
      left: 0; 
   }
-  footer hr.right-line {
+  #footer hr.right-line {
     right: 0;
   }
-  footer ul {
+  #footer ul {
     width: 100%;
   }
-  footer ul#navbar {
+  #footer ul#navbar {
     background: #fff;
   }
-  footer ul#navbar li a {
+  #footer ul#navbar li a {
     float: left;
     padding: 0 2px;
     font-size: 7px;
@@ -462,7 +465,7 @@ footer .social-icons a {
   .testimonial-show h4 {
     margin-top: 2em;
   }
-  footer .social-icons {
+  #footer .social-icons {
     margin: -25px 0 50px !important;
   }
 }

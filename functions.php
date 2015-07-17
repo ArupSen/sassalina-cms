@@ -2,14 +2,14 @@
 // enables wigitized sidebars
 if ( function_exists('register_sidebar') )
 
-  // Sidebar Widget
-  // Location: the sidebar
-  register_sidebar(array('name'=>'Sidebar',
-    'before_widget' => '<div id="widget-sidebar" class="widget-area"><ul>',
-    'after_widget' => '</ul></div>',
-    'before_title' => '<h3>',
-    'after_title' => '</h3>',
-  ));
+// Sidebar Widget
+// Location: the sidebar
+register_sidebar(array('name'=>'Sidebar',
+  'before_widget' => '<div id="widget-sidebar" class="widget-area"><ul>',
+  'after_widget' => '</ul></div>',
+  'before_title' => '<h3>',
+  'after_title' => '</h3>',
+));
 // Header Widget
 // Location: right after the navigation
 register_sidebar(array('name'=>'Header',
@@ -27,7 +27,7 @@ register_sidebar(array('name'=>'Footer',
   'after_title' => '</h4>',
 ));
 // The Alert Widget
-// Location: displayed on the top of the home page, right after the header, right before the loop, within the contend area
+// Location: displayed on the top of the home page, right after the header, right before the loop, within the content area
 register_sidebar(array('name'=>'Alert',
   'before_widget' => '<div id="widget-alert" class="widget-area"><ul>',
   'after_widget' => '</ul></div>',
@@ -56,7 +56,7 @@ add_custom_background();
 // removes detailed login error information for security
 add_filter('login_errors',create_function('$a', "return null;"));
 
-// Removes Trackbacks from the comment cout
+// Removes Trackbacks from the comment count
 add_filter('get_comments_number', 'comment_count', 0);
 function comment_count( $count ) {
   if ( ! is_admin() ) {
