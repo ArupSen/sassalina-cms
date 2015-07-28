@@ -31,6 +31,7 @@
   jQuery('.primary').addClass('navbar navbar-default');
   jQuery('#menu-main-menu').attr('id', 'navbar');
   jQuery('.menu').addClass('nav nav-justified');
+  jQuery('.menu-main-menu-container').css('display','block');
 // sub-menu or dropdown-menu
   var $sub_menu = jQuery('.sub-menu');
   var $bespoke = $sub_menu.parent().find('a').first();
