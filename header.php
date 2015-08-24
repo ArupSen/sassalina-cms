@@ -17,6 +17,7 @@
   <meta name="description" content="<?php wp_title(); echo ' | '; bloginfo( 'description' ); ?>" />
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
   <meta name="generator" content="WordPress" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="profile" href="http://gmpg.org/xfn/11" />
   <link rel="index" title="<?php bloginfo( 'name' ); ?>" href="<?php echo get_option('home'); ?>/" />
   <link rel="icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" type="image/x-icon" />
