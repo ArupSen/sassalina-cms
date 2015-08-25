@@ -266,7 +266,7 @@ p.before-text, p.after-text {
 position: absolute;
 right: 60px;
 }
-p.after-text {
+p.before-text {
   bottom: 5px;
 }
 .testimonial-show {
